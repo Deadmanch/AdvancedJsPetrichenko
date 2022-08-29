@@ -22,7 +22,7 @@ const modals = () => {
 		modal.addEventListener('click', (e) => {
 			if(e.target === modal) {
 				modal.style.display = 'none';
-				document.body.style.overflow = 'hidden';
+				document.body.style.overflow = '';
 			}
 		})
 	}
@@ -36,7 +36,7 @@ const modals = () => {
 	
 	bindModal('.popup_engineer_btn', '.popup_engineer', '.popup_engineer .popup_close');
 	bindModal('.phone_link', '.popup', '.popup .popup_close');
-	showModalByTime('.popup', 3000);
+	// showModalByTime('.popup', 3000);
 };
 
 

@@ -15540,7 +15540,7 @@ var modals = function modals() {
     modal.addEventListener('click', function (e) {
       if (e.target === modal) {
         modal.style.display = 'none';
-        document.body.style.overflow = 'hidden';
+        document.body.style.overflow = '';
       }
     });
   }
@@ -15553,8 +15553,7 @@ var modals = function modals() {
   }
 
   bindModal('.popup_engineer_btn', '.popup_engineer', '.popup_engineer .popup_close');
-  bindModal('.phone_link', '.popup', '.popup .popup_close');
-  showModalByTime('.popup', 3000);
+  bindModal('.phone_link', '.popup', '.popup .popup_close'); // showModalByTime('.popup', 3000);
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (modals);
